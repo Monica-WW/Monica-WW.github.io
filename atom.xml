@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://Monica-WW.github.io</id>
+    <title>A Blog for Daily Life</title>
+    <updated>2023-06-04T09:17:03.225Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://Monica-WW.github.io"/>
+    <link rel="self" href="https://Monica-WW.github.io/atom.xml"/>
+    <subtitle>Welcome to my personal blog</subtitle>
+    <logo>https://Monica-WW.github.io/images/avatar.png</logo>
+    <icon>https://Monica-WW.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, A Blog for Daily Life</rights>
+    <entry>
+        <title type="html"><![CDATA[DITA Topic]]></title>
+        <id>https://Monica-WW.github.io/post/dita-topic/</id>
+        <link href="https://Monica-WW.github.io/post/dita-topic/">
+        </link>
+        <updated>2023-06-04T09:11:27.000Z</updated>
+        <content type="html"><![CDATA[<p><em>学习目标：</em><br>
+	识别通用Topic中的常用元素。<br>
+	引用DITA中定义的标准主题类型。<br>
+	标识不同类型Topic中通常可以找到的元素。<br>
+	定义专门化和约束。</p>
+<p><strong>标准DITA Topic类型</strong></p>
+<p>	Concept——包含概念信息，回答“为什么”的问题。<br>
+	Task——包含分布过程信息，回答“如何做”的问题。<br>
+	Reference——包含参考信息，回答“是什么”的问题。<br>
+	Glossary Entry——定义单个术语，回答“这是什么意思”的问题。</p>
+<p><strong>通用型Topic</strong><br>
+所有DITA Topic都具有以下这种基础性结构：<br>
+<Title> 唯一必要的元素。<br>
+<Shortdesc> （简短描述）元素，通常用2-3句总结来描述。<br>
+<body> 包含topic 的大部分信息，在特定topic类型中，body元素有自己特有的标签，例如概念性topic的<conbody>和任务型topic的<taskbody>。</p>
+<p><strong>Concept 类型的Topic</strong><br>
+	一个Concept Topic 回答“为什么”的问题。她为读者正要了解的主题提供背景信息。<br>
+	Concept Topic 同行包含文本段落和列表，但也可包含注释，表格和图形元素，这些都是理解特定主题背后的想法所需要的。<br>
+Concept Topic中使用的常见元素包括：<br>
+<conbody> Concept Topic的正文<br>
+<p> 一个段落<br>
+<ul> 一个无序列表或者项目符号列表<br>
+<ol> 一个有序列表或者编号列表<br>
+<li> 内嵌于<ul>或<ol>里的一个列表项<br>
+<fig> 图片，包含一个可选标题<br>
+<image> Figure里面的图片或文本行间的图片<br>
+<section> Topic 的子章节，带有可选标题</p>
+<p><strong>Task类型的Topic</strong><br>
+Task Topic回答怎么做的问题，它包括完成过程的步骤说明。DITA还允许包括步骤结果、图形、注释和以及子步骤等元素。</p>
+<p>技术内容通常是由众多Task组成，DITA提供两种类型的Task:<br>
+严格的类型 (Strict Task)：要求所有元素以特定的顺序出现，只允许一个<example>元素，并且对于步骤只能选用两个非常正式的元素（<steps>或<steps-unordered>）.<br>
+一般的类型 (General Task)：也称为松散任务，在元素排列的顺序上更为灵活，允许多个<example>元素，并且允许使用非正式步骤元素（<steps-informal>），它可以包含更多不同的内容。<br>
+Strict Task 适用于需要分布说明的项目；General Task对过程概述很有用，对于大多数技术文档而言，DITA的最佳时间建议大家尽量使用Strict Task，<br>
+Strict Task 中使用的常见元素包括：<br>
+<taskbody> Task的正文<br>
+<steps>任务过程，即一个步骤<br>
+<step>任务中的每个单独步骤<br>
+	<cmd> 用户采取的动作；这是<step>中的必要元素<br>
+	<info> 关于步骤的附加信息<br>
+	<stepresult> 执行操作后会发生什么<br>
+	<stepxmp> 举例说明是如何做这个步骤<br>
+<example> 举例说明如何做整个Task<br>
+Reference 类型的Topic 中使用的常见元素包括：<br>
+Reference类型的Topic 回答是什么的问题。Reference 类型的Topic 通常包含描述性事实，例如命令或API函数调用的语法，以表格形式劣处设备的操作特性个容县范围，或识别软件屏幕上的信息项。</p>
+<p>Reference 不包括步骤或背景信息。Reference 与Glossary Entry类似，金提供事实。</p>
+<p><strong>Reference Topic中使用的常见元素包括：</strong><br>
+<refbody> Reference 的正文<br>
+<section> Reference 的子章节，带有可选标题<br>
+<table> 表格<br>
+<properties> 属性列表<br>
+<refsyn> 语法图</p>
+<p><strong>Glossary Entry 类型的Topic</strong><br>
+Glossary Entry类型的Topic回答这个词组或短语是什么意思的问题。Glossary Entry 通常包含一个术语，一集一个或多个定义。<br>
+Glossary Entry中使用的常见元素包含：<br>
+<glossentery> Glossary Entry topic的类型<br>
+<glossterm> 单词或词组<br>
+<glossdef> 词汇表术语的定义</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[梧桐山]]></title>
+        <id>https://Monica-WW.github.io/post/wu-tong-shan/</id>
+        <link href="https://Monica-WW.github.io/post/wu-tong-shan/">
+        </link>
+        <updated>2023-06-04T08:54:06.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p><img src="https://Monica-WW.github.io/post-images/1685868882960.JPG" alt="" loading="lazy"><br>
+<img src="https://Monica-WW.github.io/post-images/1685868933735.JPG" alt="" loading="lazy"><br>
+<img src="https://Monica-WW.github.io/post-images/1685868941068.JPG" alt="" loading="lazy"><br>
+<img src="https://Monica-WW.github.io/post-images/1685868953685.JPG" alt="" loading="lazy"></p>
+<!-- more -->
+<!-- more -->
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://Monica-WW.github.io/post/hello-gridea/</id>
+        <link href="https://Monica-WW.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="https://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
